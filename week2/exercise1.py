@@ -1,4 +1,4 @@
-"""Tidy up this file.
+"""Tidy up this file. :)
 
 This file runs, but it's a mess!
 Go through it and change it until there are no more linter errors or warnings.
