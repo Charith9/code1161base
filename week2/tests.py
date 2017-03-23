@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-"""Run the tests.
+"""Run the tests. :)
 
 This file tests your code. It'll check that the work in each
 of the exercise files does what it's supposed to.
