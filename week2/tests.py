@@ -144,6 +144,7 @@ def theTests(path_to_code_to_check=""):
             ['8', '8', '8', '8', '8', '8', '8', '8', '8', '8'],
             ['9', '9', '9', '9', '9', '9', '9', '9', '9', '9']
         ]
+        print (exercise3.loops_3())
         testResults.append(
             test(exercise3.loops_3() == ten_matching_numbers,
                  "Exercise 3: loops_3 - 10 matching lists"))
