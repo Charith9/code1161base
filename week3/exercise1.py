@@ -69,13 +69,13 @@ def stubborn_asker(low, high):
     while True:
         input_number = int(raw_input(message))
         if low < input_number < high:
-            print ("Thanks! {} looks good.".formar(input_number))
+            print ("Thanks! {} looks good.".format(input_number))
             return input_number
         else:
-            print("{input} isn't between {low}, and {high}".format(
-                                                            input=input_number,
-                                                            low=low,
-                                                            high=high))
+            print("{input} isn't between {low}, and {high}".format(input=input_number,
+                                                                   low=low,
+                                                                   high=high))
+
 
 
 def not_number_rejector(message):
