@@ -28,6 +28,59 @@ def advancedGuessingGame():
     Remember to think modular. Try to keep your functions small and single
     purpose if you can!
     """
+    print("Hi, let's begin")
+    print("Please enter a lowerbound:")
+    lowerbound = not_number_rejector("Your lowerbound is:")
+    upperbound = not_number_rejector("What is you upperbound?:")
+    while upperbound <= lowerbound:
+        print("Re-enter upperbound")
+        pass
+    upperbound = int(upperbound)
+    lowerbound = int(lowerbound)
+
+    actualNumber = random.randint(lowerbound, upperbound)
+    guess = False
+    while not guess:
+        try:
+            input_number = int(raw_input("Guess number:"))
+            print("{} is accepted".format(input_number))
+            if input_number == actualNumber:
+                print("{} is correct".format(input_number))
+                guess = True
+            elif input_number < actualNumber:
+                print("Too small, Re-try")
+            elif input_number > upperbound:
+                print("Out of bounds")
+            elif input_number < lowerbound:
+                print("Out of bounds")
+            else:
+                print("Too large, Re-try")
+        except Exception as e:
+                print("Try again, number required ({})".format(e))
+        return "Thats it"
+    pass
+
+    actualNumber = random.randint(upperbound, lowerbound)
+    guess = False
+
+    while not guess:
+        try:
+            input_number = int(raw_input("Guess number:"))
+            print("{} is accepted".format(input_number))
+            if input_number == actualNumber:
+                print("{} is correct".format(input_number))
+            guess = True
+            elif input_number < actualNumber:
+                print("Too small, Re-try")
+            elif input_number > lowerbound:
+                print("Out of bounds")
+            elif input_number < upperbound:
+                print("Out of bounds")
+        else:
+            print("Too large, Re-try")
+    except Exception as e:
+            print("Try again, number required ({})".format(e))
+    return "Voila"
     pass
 
 
